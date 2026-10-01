@@ -1,13 +1,10 @@
-import os
-from datetime import datetime
-
 from mltu.configs import BaseModelConfigs
 
 
 class ModelConfigs(BaseModelConfigs):
     def __init__(self):
         super().__init__()
-        self.model_path = os.path.join("models/03_handwriting_recognition", datetime.strftime(datetime.now(), "%Y%m%d%H%M"))
+        self.model_path = "models"
         self.vocab = ""
         self.height = 32
         self.width = 128
