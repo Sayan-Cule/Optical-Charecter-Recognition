@@ -1,4 +1,4 @@
-# Handwritten Word Recognition OCR
+# Handwritten Text Recognition (OCR)
 
 A deep-learning optical character recognition (OCR) project for recognizing handwritten English words from images.
 
