@@ -91,12 +91,15 @@ The GUI uses OpenCV for image loading/resizing, ONNX Runtime through MLTU's infe
 ```text
 Optical-Charecter-Recognition/
 ├── README.md
+├── LICENSE
 ├── .gitignore
 ├── config/
 │   └── configs.yaml
-├── docs/
+├── data/
+│   └── README.md
 ├── models/
-│   └── (trained model files, when included)
+│   ├── model.h5
+│   └── model.onnx
 └── src/
     ├── configs.py
     ├── gui.py
@@ -119,13 +122,11 @@ Main Python dependencies used by the source include:
 - pandas
 - tqdm
 
-Exact package versions should be pinned separately once the original runtime environment is confirmed.
-
 ## Notes
 
 - The original academic report is intentionally not included in the public repository.
 - The public source has been cleaned of local machine-specific paths.
 - The IAM Words dataset is not redistributed here.
-- Trained model binaries can be added separately if they are appropriate for public distribution.
+- Trained H5 and ONNX model files are included in the `models/` directory.
 - Reported experimental results are not presented as current benchmark results unless they can be reproduced from the included model and evaluation data.
 - This repository is maintained as a portfolio and interview reference.
